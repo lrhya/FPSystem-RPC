@@ -24,8 +24,8 @@
 
   <dependencies>
 
-
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+    <!--提供更多的工具类-->
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
@@ -36,7 +36,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
-      <version>2.0.4.RELEASE</version>
     </dependency>
 
     <dependency>
@@ -44,6 +43,21 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.195</version>
+      <scope>test</scope>
+    </dependency>
 
 
     <!-- junit -->
@@ -68,7 +82,6 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.41</version>
     </dependency>
-
   </dependencies>
 
   <build>

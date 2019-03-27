@@ -23,6 +23,7 @@
 
     <dependencies>
 
+        <!--导入父模块相关依赖-->
         <dependency>
             <groupId>com.lrhya</groupId>
             <artifactId>FPSystem</artifactId>
