@@ -1,10 +1,14 @@
 package com.lrhya.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
 
+@Entity(name="order_t")
 public class Order {
 
+    @Id
     private String orderId;
     //渠道id
     private String chanId;

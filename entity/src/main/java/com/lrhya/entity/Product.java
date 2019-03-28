@@ -1,11 +1,13 @@
 package com.lrhya.entity;
 
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
-
+@Entity
 public class Product {
-
+   @Id
     private String id;
     private String name;
 
