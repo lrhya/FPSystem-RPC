@@ -14,6 +14,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>entity</module>
+    <module>manager</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -28,6 +29,7 @@
   </properties>
 
   <dependencies>
+
 
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <!--提供更多的工具类-->

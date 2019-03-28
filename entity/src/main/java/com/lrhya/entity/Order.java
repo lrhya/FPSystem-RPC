@@ -5,6 +5,8 @@ import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
 
+
+
 @Entity(name="order_t")
 public class Order {
 
