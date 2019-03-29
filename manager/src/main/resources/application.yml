@@ -1,6 +1,9 @@
 spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
+    time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://localhost:3306/fpsystem_manager?user=wch&password=wch123&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/fpsystem_manager?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 19980808
 
