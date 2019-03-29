@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/fpsystem_manager?user=wch&password=wch123&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 19980808
+
+#    url: jdbc:h2:mem:manager;DB_CLOSE_ON_EXIT=FALSE
+  jpa:
+    show-sql: true
+server:
+  servlet:
+    context-path: /manager
+  port: 8081
