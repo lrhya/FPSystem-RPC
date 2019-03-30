@@ -7,10 +7,15 @@ spring:
     username: root
     password: 19980808
 
-#    url: jdbc:h2:mem:manager;DB_CLOSE_ON_EXIT=FALSE
   jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
     show-sql: true
 server:
   servlet:
     context-path: /manager
   port: 8081
+
+

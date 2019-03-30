@@ -15,6 +15,7 @@
     <modules>
         <module>entity</module>
         <module>manager</module>
+        <module>util</module>
     </modules>
     <packaging>pom</packaging>
 
