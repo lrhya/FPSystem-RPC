@@ -18,6 +18,7 @@
         <module>util</module>
         <module>api</module>
         <module>www</module>
+        <module>seller</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -83,16 +84,16 @@
         <dependency>
             <groupId>com.github.briandilley.jsonrpc4j</groupId>
             <artifactId>jsonrpc4j</artifactId>
-            <version>1.5.3</version>
+            <version>1.5.1</version>
         </dependency>
 
 
         <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.jms -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>org.springframework.jms</artifactId>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>org.springframework.jms</artifactId>-->
             <!--<version>3.1.0.RELEASE</version>-->
-        </dependency>
+        <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-activemq -->
         <dependency>
