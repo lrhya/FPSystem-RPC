@@ -42,7 +42,6 @@ public class ProductService {
     private void checkProduct(Product product) {
 
 
-
         Assert.notNull(product.getId(), ErrorEnum.ID_NOT_NULL.getCode());
 //        Assert.notNull(product.getId(), "编号不可为空");
         //其他非空校验

@@ -16,6 +16,8 @@
         <module>entity</module>
         <module>manager</module>
         <module>util</module>
+        <module>api</module>
+        <module>www</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -30,8 +32,8 @@
     </properties>
 
     <dependencies>
-        <!-- junit -->
 
+        <!-- junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -75,6 +77,30 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.41</version>
         </dependency>
+
+
+        <!-- jsonrpc4j -->
+        <dependency>
+            <groupId>com.github.briandilley.jsonrpc4j</groupId>
+            <artifactId>jsonrpc4j</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.jms -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>org.springframework.jms</artifactId>
+            <!--<version>3.1.0.RELEASE</version>-->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-activemq -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+            <!--<version>2.0.1.RELEASE</version>-->
+        </dependency>
+
 
     </dependencies>
 
