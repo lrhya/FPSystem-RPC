@@ -25,15 +25,15 @@ public class RpcConfiguration {
 
 
     @Bean
-    @ConditionalOnProperty(value = {"rpc.client.url","rpc.client.basePackage"})
-    public AutoJsonRpcClientProxyCreator rpcClientProxyCreator(@Value("${rpc.client.url}") String url,@Value("${rpc.client.basePackage}") String basePackage) {
+//    @ConditionalOnProperty(value = {"rpc.client.url","rpc.client.basePackage"})
+    public  static AutoJsonRpcClientProxyCreator rpcClientProxyCreator(@Value("${rpc.manager.url}") String url) {
         AutoJsonRpcClientProxyCreator creator = new AutoJsonRpcClientProxyCreator();
         try {
             creator.setBaseUrl(new URL(url));
         } catch (MalformedURLException e) {
             LOG.error("创建rpc服务地址错误", e);
         }
-        creator.setScanPackage(basePackage);
+        creator.setScanPackage(ProductRpc.class.getPackage().getName());
         return creator;
     }
 }

@@ -13,7 +13,7 @@ import java.util.List;
  * 产品相关的rpc服务
  */
 
-@Service
+//@Service
 @JsonRpcService("rpc/product")
 public interface ProductRpc {
     /**

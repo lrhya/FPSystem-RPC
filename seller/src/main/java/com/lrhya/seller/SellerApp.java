@@ -15,7 +15,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 //@EnableCaching
 //@EnableScheduling
-@EntityScan("com.lrhya.entity")
+//@EntityScan("com.lrhya.entity")
 @ComponentScan(basePackageClasses = {ProductRpc.class})
 public class SellerApp {
     public static void main(String[] args) {

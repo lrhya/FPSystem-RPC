@@ -25,8 +25,8 @@ import java.util.List;
 public class ProductRpcImpl implements ProductRpc {
     private static Logger LOG = LoggerFactory.getLogger(ProductRpcImpl.class);
 
-    @Autowired
-    private ProductService productService;
+//    @Autowired
+   ProductService productService = new ProductService();
 
     @Override
     public List<Product> query(ParamInf req) {
@@ -40,6 +40,9 @@ public class ProductRpcImpl implements ProductRpc {
     @Override
     public Product findOne(String id) {
         LOG.info("查询产品详情,请求:{}", id);
+        if (productService == null){
+            System.out.println("kong");
+        }
         Product result = productService.findOne(id);
         LOG.info("查询产品详情,结果:{}", result);
         return result;
