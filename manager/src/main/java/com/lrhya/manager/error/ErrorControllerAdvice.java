@@ -18,15 +18,15 @@ public class ErrorControllerAdvice {
 
     @ExceptionHandler(Exception.class)
     @ResponseBody
-    public ResponseEntity handleException(Exception e){
+    public ResponseEntity handleException(Exception e) {
         Map<String, Object> attrs = new HashMap();
         String errorCode = e.getMessage();
         ErrorEnum errorEnum = ErrorEnum.getByCode(errorCode);
-        attrs.put("message",errorEnum.getMessage());
-        attrs.put("code",errorEnum.getCode());
-        attrs.put("canRetry",errorEnum.isCanRetry());
-        attrs.put("type","advice");
-        Assert.isNull(attrs,"advice");
+        attrs.put("message", errorEnum.getMessage());
+        attrs.put("code", errorEnum.getCode());
+        attrs.put("canRetry", errorEnum.isCanRetry());
+        attrs.put("type", "advice");
+        Assert.isNull(attrs, "advice");
         return new ResponseEntity(attrs, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }

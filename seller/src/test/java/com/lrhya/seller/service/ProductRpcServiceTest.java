@@ -31,7 +31,7 @@ public class ProductRpcServiceTest {
 
     @Test
     public void findOne() {
-        Product product = productRpc.findOne("001");
+        Product product = productRpc.findOne("002");
         Assert.assertNotNull(product);
         System.out.println(product.toString());
     }

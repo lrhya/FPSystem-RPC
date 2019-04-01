@@ -1,8 +1,6 @@
 package com.lrhya.api.domain;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 
 import java.math.BigDecimal;
 import java.util.List;

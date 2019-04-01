@@ -9,11 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +24,8 @@ public class ProductRpcService {
     private static Logger LOG = LoggerFactory.getLogger(ProductRpcService.class);
 
 
-     @Autowired
-     ProductRpc productRpc;
+    @Autowired
+    ProductRpc productRpc;
 
 
     /**
@@ -40,7 +37,7 @@ public class ProductRpcService {
         ProductRpcReq req = new ProductRpcReq();
         List<String> status = new ArrayList<>();
         status.add(ProductStatus.IN_SELL.name());
-      //  Pageable pageable = (Pageable) PageRequest.of(0, 1000, Sort.Direction.DESC, "rewardRate");
+        //  Pageable pageable = (Pageable) PageRequest.of(0, 1000, Sort.Direction.DESC, "rewardRate");
 //        Pageable pageable = (Pageable) new PageRequest(0,1000, Sort.Direction.DESC,"rewardRate");
         req.setStatusList(status);
       /*  req.setPag(0);

@@ -7,11 +7,11 @@ import java.util.List;
 
 @JsonDeserialize(as = ProductRpcReq.class)
 public interface ParamInf {
-    public List<String> getIdList();
+    List<String> getIdList();
 
-    public BigDecimal getMinRewardRate();
+    BigDecimal getMinRewardRate();
 
-    public BigDecimal getMaxRewardRate();
+    BigDecimal getMaxRewardRate();
 
-    public List<String> getStatusList();
+    List<String> getStatusList();
 }

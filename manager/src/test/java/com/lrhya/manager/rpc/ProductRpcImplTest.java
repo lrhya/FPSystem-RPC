@@ -23,7 +23,7 @@ public class ProductRpcImplTest {
 
     @Test
     public void findOne() {
-        productRpcImpl.findOne("001");
+        productRpcImpl.findOne("T001");
     }
 
 

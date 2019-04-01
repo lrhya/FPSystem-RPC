@@ -10,7 +10,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
  * 产品管理
  */
 
-public interface ProductRepository extends PagingAndSortingRepository<Product, String>,JpaRepository<Product, String>, JpaSpecificationExecutor<Product> {
+public interface ProductRepository extends PagingAndSortingRepository<Product, String>, JpaRepository<Product, String>, JpaSpecificationExecutor<Product> {
 
 }
 
