@@ -105,8 +105,9 @@ public class ProductService {
      */
     public Product findOne(String id) {
         Assert.notNull(id, "需要产品编号参数");
+        Assert.notNull(repository);
         LOG.debug("查询单个产品，id={}", id);
-
+//sss
         Product product = repository.findById(id).orElse(null);
 
         LOG.debug("查询单个产品,结果={}", product);

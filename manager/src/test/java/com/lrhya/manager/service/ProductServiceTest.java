@@ -1,30 +1,38 @@
-package com.lrhya.manager.rpc;
+package com.lrhya.manager.service;
 
+import com.lrhya.entity.Product;
+import com.lrhya.manager.repositories.ProductRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.*;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class ProductRpcImplTest {
+public class ProductServiceTest {
 
 
     @Autowired
-    ProductRpcImpl productRpcImpl;
+    private ProductRepository repository;
+
 
     @Test
-    public void query() {
+    public void addProduct() {
     }
 
     @Test
     public void findOne() {
-        productRpcImpl.findOne("001");
+
+        Product product = repository.findById("001").orElse(null);
+
+        System.out.println(product.toString());
     }
 
+    @Test
+    public void query() {
 
+    }
 }

@@ -17,7 +17,6 @@
         <module>manager</module>
         <module>util</module>
         <module>api</module>
-        <module>www</module>
         <module>seller</module>
     </modules>
     <packaging>pom</packaging>

@@ -23,15 +23,16 @@ import java.util.List;
 @AutoJsonRpcServiceImpl
 @Service
 public class ProductRpcImpl implements ProductRpc {
+
     private static Logger LOG = LoggerFactory.getLogger(ProductRpcImpl.class);
 
-//    @Autowired
-   ProductService productService = new ProductService();
+    @Autowired
+    ProductService productService;
 
     @Override
     public List<Product> query(ParamInf req) {
         LOG.info("查询多个产品,请求:{}", req);
-        Pageable pageable = new PageRequest(0,100,Sort.Direction.DESC,"rewardRate");
+        Pageable pageable = new PageRequest(0, 100, Sort.Direction.DESC, "rewardRate");
         Page<Product> result = productService.query(req.getIdList(), req.getMinRewardRate(), req.getMaxRewardRate(), req.getStatusList(), pageable);
         LOG.info("查询多个产品,结果:{}", result);
         return result.getContent();
@@ -40,7 +41,7 @@ public class ProductRpcImpl implements ProductRpc {
     @Override
     public Product findOne(String id) {
         LOG.info("查询产品详情,请求:{}", id);
-        if (productService == null){
+        if (productService == null) {
             System.out.println("kong");
         }
         Product result = productService.findOne(id);

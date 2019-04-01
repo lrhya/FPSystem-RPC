@@ -5,7 +5,6 @@ import com.lrhya.api.ProductRpc;
 import com.lrhya.api.domain.ProductRpcReq;
 import com.lrhya.entity.Product;
 import com.lrhya.entity.enums.ProductStatus;
-import com.lrhya.manager.rpc.ProductRpcImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +27,8 @@ public class ProductRpcService {
     private static Logger LOG = LoggerFactory.getLogger(ProductRpcService.class);
 
 
-    //@Autowired
-     ProductRpc productRpc = new ProductRpcImpl();
+     @Autowired
+     ProductRpc productRpc;
 
 
     /**
@@ -57,11 +56,5 @@ public class ProductRpcService {
         return result;
     }
 
-
-    @PostConstruct
-    public void testFindAll(){
-
-        findAll();
-    }
 
 }
