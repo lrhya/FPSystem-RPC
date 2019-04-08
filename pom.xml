@@ -18,6 +18,7 @@
         <module>util</module>
         <module>api</module>
         <module>seller</module>
+        <module>swagger</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -91,7 +92,7 @@
             <version>1.5.1</version>
         </dependency>
 
-        <!-- swagger -->
+        <!-- 引入swagger相关依赖 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
