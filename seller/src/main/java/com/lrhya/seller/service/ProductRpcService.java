@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,5 +54,15 @@ public class ProductRpcService {
         return result;
     }
 
+    public Product findOne(String id) {
+        LOG.info("rpc查询全部产品，请求：{}", id);
+        Product result = productRpc.findOne(id);
+        LOG.info("rpc查询全部产品，结果：{}", result);
+        return result;
+    }
 
+    @PostConstruct
+    public void init(){
+        findOne("001");
+    }
 }

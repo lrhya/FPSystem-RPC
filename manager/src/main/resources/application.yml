@@ -18,4 +18,6 @@ server:
     context-path: /manager
   port: 8081
 
-
+logging:
+  level:
+    com.googlecode.jsonrpc4j: debug

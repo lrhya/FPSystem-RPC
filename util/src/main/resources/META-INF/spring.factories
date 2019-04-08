@@ -1,1 +1,1 @@
-#org.springframework.boot.autoconfigure.EnableAutoConfiguration =com.lrhya.util.configuration.JSONRpcConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration =com.lrhya.util.configuration.JsonRpcConfiguration

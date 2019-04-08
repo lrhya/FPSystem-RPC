@@ -9,16 +9,12 @@ import java.util.List;
  * 产品相关rpc请求对象
  */
 public class ProductRpcReq implements ParamInf {
+
     private List<String> idList;
     private BigDecimal minRewardRate;
-   // private  Pageable pageable;
     private BigDecimal maxRewardRate;
     private List<String> statusList;
 
-  /*  private  int pag;
-    private  int pageSize;
-    private Sort.Direction direction;
-    private  String orderBy;*/
 
     @Override
     public String toString() {
@@ -57,44 +53,5 @@ public class ProductRpcReq implements ParamInf {
         this.statusList = statusList;
     }
 
- /*   public Pageable getPageable() {
-        return pageable;
-    }
 
-    public void setPageable(Pageable pageable) {
-        this.pageable = pageable;
-    }*/
-
-
-/*    public int getPag() {
-        return pag;
-    }
-
-    public void setPag(int pag) {
-        this.pag = pag;
-    }
-
-    public int getPageSize() {
-        return pageSize;
-    }
-
-    public void setPageSize(int pageSize) {
-        this.pageSize = pageSize;
-    }
-
-    public Sort.Direction getDirection() {
-        return direction;
-    }
-
-    public void setDirection(Sort.Direction direction) {
-        this.direction = direction;
-    }
-
-    public String getOrderBy() {
-        return orderBy;
-    }
-
-    public void setOrderBy(String orderBy) {
-        this.orderBy = orderBy;
-    }*/
 }

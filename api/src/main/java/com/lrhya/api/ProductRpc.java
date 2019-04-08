@@ -10,7 +10,7 @@ import java.util.List;
  * 产品相关的rpc服务
  */
 
-@JsonRpcService("rpc/product")
+@JsonRpcService("rpc/product") //这里不能以/开始例如 /products这是错误的
 public interface ProductRpc {
     /**
      * 查询多个产品

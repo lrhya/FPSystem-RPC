@@ -9,10 +9,15 @@ logging:
 #rpc:
 #  client:
 #    url:  http://localhost:8081/manager
-rpc.manager.url: http://localhost:8081/manager/
+#rpc.manager.url: http://localhost:8081/manager/
 #rpc:
 #  manager:
 #    url: http://localhost:8081/manager/
+
+rpc:
+  client:
+    url: http://localhost:8081/manager/ #结尾记得加上/,否则会报错
+    basePackage: com.lrhya.api
 
 spring:
   datasource:

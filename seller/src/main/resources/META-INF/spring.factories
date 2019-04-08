@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration =com.lrhya.seller.configuration.RpcConfiguration
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration =com.lrhya.seller.configuration.RpcConfiguration
